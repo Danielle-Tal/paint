@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/painter-style.css">
+</head>
+<body>
+    <div class="canvas-div" id="canvas-div" onclick="draw()"></div>
+    <div class>
+        <div class="menu" id="color-menu">
+            <div class="colors-side dis">
+                <div class="opsize color" id="blue"></div>
+                <div class="opsize color" id="red"></div>
+                <div class="opsize color" id="green"></div>
+                <div class="opsize color" id="orange"></div>
+                <div class="opsize color" id="black"></div>
+            </div>
+            <div class="colors-side dis">
+                <div class="opsize color" id="lightblue"></div>
+                <div class="opsize color" id="yellow"></div>
+                <div class="opsize color" id="gray"></div>
+                <div class="opsize color" id="purple"></div>
+                <div class="opsize color" id="lightgreen"></div>
+            </div>
+            <div class="color-input">
+                <input id="picker" type="color" value="#ff0000">
+            </div>
+        </div>
+        <div class="te">
+        <div class="menu">
+            <div class="options-side">
+                <div class="opsize dv color" id="white"><i class="fa fa-eraser"></i></div>
+                <div class="shapes dis">
+                    <div class="opsize dv shape" id="square"><i class="fa fa-square"></i></div>
+                    <div class="opsize dv shape" id="circle"><i class="fa fa-circle"></i></div>
+                </div>
+            </div>
+            <div class="options-side">
+                <div class="sizes dis">
+                    <div class="opsize dv size" id="small"><img class="fa" id="sm-img" src="./images/paint-brushes.png"></div>
+                    <div class="opsize dv size" id="med"><img class="fa" id="md-img" src="./images/paint-brushes md.png"></div>
+                    <div class="opsize dv size" id="large"><img class="fa" id="lg-img" src="./images/paint-brushes-lg.png"></div>
+                </div>
+            </div>
+        </div> 
+        </div>
+        <button id="rotate">Rotate</button>
+        <button id="clear">Clear board</button>
+        <div class="dimensons">
+            <label for="height-canvas">Height</label>
+            <input type="number" id="height-canvas">
+            <label for="width-canvas">Width</label>
+            <input type="number" id="width-canvas">
+            <button id="canvas-size" type="submit">Submit</button>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="./js/painter.js"></script>
+</body>
+</html>
